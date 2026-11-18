@@ -1,4 +1,4 @@
-package demo.com.in;
+package assignment;
 
 import java.util.Scanner;
 

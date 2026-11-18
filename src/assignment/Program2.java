@@ -12,14 +12,8 @@ public class Program2 {
         System.out.println("INPUT IS: "+input);
 
         String words[]=input.split(" ");
-        int count=0;
 
-       for(int i=0;i<words.length;i++){
-           count=count+1;
-       }
-
-       System.out.println(count);
-
+        System.out.println("INPUT IS: "+words.length);
 
     }
 }
