@@ -14,9 +14,10 @@ public class Program6 {
         String input = sc.nextLine();
 
         //length of the input string
-        System.out.print(input.length());
+       System.out.print("INPUT STRING:"+input);
+       System.out.println(" ");
 
-        System.out.print("  ");
+        System.out.print("");
         int count1=0;
 
         int count = 0;
@@ -28,14 +29,8 @@ public class Program6 {
         for(int i=0;i<word.length;i++)
         {
             String words=word[i];
-            String reverse="";
-            count1=count1+words.length();
+            String reverse=getReversedString(words);
 
-            for(int j=words.length()-1; j>=0 ;j--)
-            {
-                reverse= reverse+words.charAt(j);
-                count++;
-            }
             if(i!=word.length-1) {
                 output = output + reverse +" ";
             }else {
@@ -43,13 +38,27 @@ public class Program6 {
             }
         }
 
-        System.out.println("OUTPUT STRING IS:"+output);
-
-//        System.out.println(count);
-//
-//        System.out.println(count1);
+        System.out.println("OUTPUT STRING:"+output);
 
     sc.close();
     }
+
+
+    private static String getReversedString(String input)
+    {
+        String reversedString="";
+        for(int j=input.length()-1; j>=0 ;j--)
+        {
+            reversedString= reversedString+input.charAt(j);
+        }
+
+        return reversedString;
+
+    }
+
+
+
+
+
 
 }
