@@ -36,15 +36,18 @@ public class Program6 {
                 reverse= reverse+words.charAt(j);
                 count++;
             }
-
-            output=output+reverse+" ";
+            if(i!=word.length-1) {
+                output = output + reverse +" ";
+            }else {
+                output = output + reverse;
+            }
         }
 
-        System.out.println("OUTPUT STRING IS:  "+output+" ");
+        System.out.println("OUTPUT STRING IS:"+output);
 
-        System.out.println(count);
-
-        System.out.println(count1);
+//        System.out.println(count);
+//
+//        System.out.println(count1);
 
     sc.close();
     }
